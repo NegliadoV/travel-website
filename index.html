@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="../Задачи/css/style.less">
+    <link rel="stylesheet" href="../Задачи/css/style.css">
+    <title>Treaning</title>
+</head>
+<body>
+
+<!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner" id = "headerInner">
+                <div class="header__logo" id = "headerLogo">TakeMe</div>
+                <nav class="nav">
+                    <a class="nav__linck" id="nav__linck" href="">Locations</a>
+                    <a class="nav__linck" id="nav__linck1" href="">Accommodation</a>
+                    <a class="nav__linck" id="nav__linck2" href="">Travel Guides</a>
+                    <a class="nav__linck" id="nav__linck3" href="">Where To Stay</a>
+                    <a class="nav__linck" id="nav__linck4" href="">Contact Us</a>
+                    <a class="nav__linck  nav__linck--tdn" href="">Log In</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+<!-- Intro -->
+
+    <div class="intro" id = "intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__title">
+                <h2 class="intro__title-text">Find Your Dream Vacation Location</h2>
+                    <p class="intro__text">Search hundreds of locations from around the world and find your perfect vacation location.</p>
+                </div>
+                <div class="intro__input" >
+                    <div class="input__wrapper-left">
+                    <input type="text" id="introInputLeft" onkeyup="introFunction()"   class="input input--left" placeholder="Страна" autofocus>
+                    <ul class="intro__ul" id="introUlLeft">
+                        <li class="intro__li" id="intriLiLeft">
+                            <a class="intro__imput-link" href="#">Россия</a></li>
+                        <li class="intro__li">
+                            <a class="intro__imput-link" href="#">Абхазия</a></li>
+
+                        <li class="intro__li">
+                            <a class="intro__imput-link" href="#">Албания</a></li>
+                        <li class="intro__li">
+                            <a class="intro__imput-link" href="#">Армения</a></li>
+
+                        <li class="intro__li">
+                            <a class="intro__imput-link" href="#">Беларусь</a></li>
+
+                        <li class="intro__li">
+                            <a class="intro__imput-link" href="#">Болгария</a></li>
+
+                        <li class="intro__li">
+                            <a class="intro__imput-link" href="#">Греция</a></li>
+
+                            <li class="intro__li">
+                            <a class="intro__imput-link" href="#">Венгрия</a></li>
+
+                            <li class="intro__li">
+                            <a class="intro__imput-link" href="#">Грузия</a></li>
+
+                            <li class="intro__li">
+                            <a class="intro__imput-link" href="#">Доминикана</a></li>
+
+                            <li class="intro__li">
+                            <a class="intro__imput-link" href="#">Египет</a></li>
+
+                            <li class="intro__li">
+                            <a class="intro__imput-link" href="#">Иордания</a></li>
+
+                            <li class="intro__li">
+                            <a class="intro__imput-link" href="#">Казахстан</a></li>
+
+                            <li class="intro__li">
+                            <a class="intro__imput-link" href="#">Кения</a></li>
+                            <li class="intro__li">
+                            <a class="intro__imput-link" href="#">Кипр</a></li>
+                            <li class="intro__li">
+                            <a class="intro__imput-link" href="#">Киргизия</a></li>
+                            <li class="intro__li"><a class="intro__imput-link" href="#">Куба</a></li>
+                            <li class="intro__li"><a class="intro__imput-link" href="#">Ливан</a></li>
+                    </div>
+                    <select name="animal" id="" class="select select--intro" >
+                        <option class="intro__select-text" placeholder="Transportacion">Transportacion</option>
+                        <option class="intro__select-text" value="Air">Air</option>
+                        <option class="intro__select-text" value="Ground">Ground</option>
+                        <option class="intro__select-text" value="Sea" >Sea</option>
+                    </select>
+                     <div class="input__wrapper-right">
+                    <input type="text" class="input input--right" id = "inputR" placeholder="Number of people" >
+                    <ul class="intro__ul intro__ul--Ulright" id="introUl">
+                        <li class="intro__li intro__li--liright">
+                            <a class="intro__imput-link intro__imput-link--l-right" href="#">Adele</a></li>
+                        <li class="intro__li">
+                            <a class="intro__imput-link intro__imput-link--l-right" href="#">Agnes</a></li>
+
+                        <li class="intro__li">
+                            <a class="intro__imput-link intro__imput-link--l-right" href="#">Billy</a></li>
+                        <li class="intro__li">
+                            <a class="intro__imput-link intro__imput-link--l-right" href="#">Bob</a></li>
+
+                        <li class="intro__li">
+                            <a class="intro__imput-link intro__imput-link--l-right" href="#">Calvin</a></li>
+                        <li class="intro__li">
+                            <a class="intro__imput-link intro__imput-link--l-right" href="#">Christina</a></li>
+                        <li class="intro__li">
+                            <a class="intro__imput-link intro__imput-link--l-right" href="#">Cindy</a></li>
+                      </ul>
+                      </div>
+                    <button class="btn-hover btn" id = "btnIntro">Search</button>
+                </div>
+            </div>
+            </div>
+        </div>  <!--  /intro  -->
+
+
+        <!--- Location_top -->
+
+        <div class="loc__top" id="loc__top">
+            <div class="container">
+                <div class="loc__inner">
+                <h3   h3 class="loc__title">Magical Santorini<br>
+                    Greece`s Jewel</h3>
+                    <p class="loc__text">Candy-colored houses carved into cliffs, sapphire waters,<br>
+                        gleaming white buildings topped with half-spheres<br>
+                        the color of a stormy sky.</p>
+                    <button class="btn-hover btn btn--loc">Explore More</button>
+                </div>
+
+
+                <div class="loca__carousel">
+                    <img class="loc__img" src="../Задачи/images/loc_img1.svg" alt="">
+                    <img class="loc__img"  src="../Задачи/images/loc_img3.svg" alt="">
+                    <img class="loc__img loc__img--narrow" src="../Задачи/images/loc_img2.svg" alt="">
+            </div>
+        </div> <!-- /container -->
+          </div> <!--- /loc_top -->
+
+
+          <div class="ellipse__loc">
+            <img src="../Задачи/images/ellipse_1.svg" alt="">
+            <img src="../Задачи/images/ellipse_2.svg" alt="">
+            <img src="../Задачи/images/Ellipse_3.svg" alt="">
+            <img src="../Задачи/images/Ellipse_4.svg" alt="">
+        </div>
+
+        <!--- /Loation_top -->
+
+
+        <!-- Location_bottom -->
+    <div class="container">
+        <div class="loc_bot">
+                <div class="loc__bot-inner">
+                    <img class="loc__bot-img" src="../Задачи/images/img_paris.svg" alt="">
+                    <h3 class="loc__bot-title">Magical Paris</h3>
+                    <p class="loc__bot-text">City of light, one of the most famous cities in the world is waiting to be explored. Some of the most famous museums, food and landmarks are waiting for you in Paris.</p>
+                    <div class="loc__bot-reating">
+                        <div class="star_img">
+                        <img class="reating__star-img" src="../Задачи/images/star1.svg" alt="">
+                        <img class="reating__star-img" src="../Задачи/images/star1.svg" alt="">
+                        <img class="reating__star-img" src="../Задачи/images/star1.svg" alt="">
+                        <img class="reating__star-img" src="../Задачи/images/star1.svg" alt="">
+                        <img class="reating__star-img" src="../Задачи/images/star2.svg" alt="">
+                    </div>
+                        <div class="reating__text">2436 Ratings</div>
+                    </div>
+                </div> <!-- /loc__bot-inner -->
+
+                <div class="loc__bot-inner">
+                    <img class="loc__bot-img" src="../Задачи/images/img__london.svg" alt="">
+                    <h3 class="loc__bot-title">Classic London</h3>
+                    <p class="loc__bot-text">City of history, one of the most famous cities in the world is waiting to be explored. Some of the most
+                        famous museums, food, pubs and landmarks are waiting for you in London.</p>
+                    <div class="loc__bot-reating">
+                        <div class="star_img">
+                        <img class="reating__star-img" src="../Задачи/images/star1.svg" alt="">
+                        <img class="reating__star-img" src="../Задачи/images/star1.svg" alt="">
+                        <img class="reating__star-img" src="../Задачи/images/star1.svg" alt="">
+                        <img class="reating__star-img" src="../Задачи/images/star1.svg" alt="">
+                        <img class="reating__star-img" src="../Задачи/images/star2.svg" alt="">
+                    </div>
+                        <div class="reating__text">2436 Ratings</div>
+                    </div>
+                </div> <!-- /loc__bot-inner -->
+
+                <div class="loc__bot-inner">
+                    <img class="loc__bot-img" src="../Задачи/images/img__new_york.svg" alt="">
+                    <h3 class="loc__bot-title">Famous New York</h3>
+                    <p class="loc__bot-text">City of fashion and yellow cabs, one of the most famous cities in the world is waiting to be explored. Some of the most famous museums, food and
+                        landmarks are waiting for you in New York.</p>
+                    <div class="loc__bot-reating">
+                        <div class="star_img">
+                        <img class="loc__star-img" src="../Задачи/images/star1.svg" alt="">
+                        <img class="loc__star-img" src="../Задачи/images/star1.svg" alt="">
+                        <img class="loc__star-img" src="../Задачи/images/star1.svg" alt="">
+                        <img class="loc__star-img" src="../Задачи/images/star1.svg" alt="">
+                        <img class="loc__star-img" src="../Задачи/images/star2.svg" alt="">
+                    </div>
+                        <div class="reating__text">2436 Ratings</div>
+                    </div>
+                </div><!-- /loc__bot-inner -->
+            </div><!-- /loc__bot -->
+        </div> <!-- /container -->
+
+            <!-- Activities -->
+            <div class="container">
+                <div class="active">
+
+                    <div class="activ__inner">
+                        <img src="../Задачи/images/img_voyagers.svg">
+                            <div class="active__overtitle">Professional Guides
+                                <h3 class="active__title">Sea Voyages</h3>
+                            </div>
+
+                            <div class="activ_reating">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star2.svg" alt="">
+                                <div class="active__visited">126 Visited</div>
+                            </div>
+                        </div><!-- /activ__inner -->
+
+                        <div class="activ__inner"><img src="../Задачи/images/img_climbs.svg" class="activ__inner">
+                            <div class="active__overtitle">Safe Guides
+                                <h3 class="active__title">Mountain Climbs</h3>
+                            </div>
+
+                            <div class="activ_reating">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star2.svg" alt="">
+                                <div class="active__visited">126 Visited</div>
+                            </div>
+                        </div> <!-- /activ__inner -->
+
+                        <div class="activ__inner mr-0"><img src="../Задачи/images/img_riders.svg" class="activ__inner">
+                            <div class="active__overtitle">Expert Drivers
+                                <h3 class="active__title">Quad Rides</h3>
+                            </div>
+
+                            <div class="activ_reating">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star2.svg" alt="">
+                                <div class="active__visited">126 Visited</div>
+                            </div>
+                        </div> <!-- /activ__inner -->
+                </div> <!-- Activities -->
+            </div> <!-- /container -->
+
+            <!-- Subscribe  -->
+
+            <div class="subscribe">
+                <div class="container">
+                    <div class="subscribe__inner">
+                        <h4 class="subscribe__title">Subscribe to our newsletter
+                            <div class="subscribe__text">And receive all the latest news, discounts and updates about the most visited<br>
+                                locations from around the globe, daily.</div>
+                        </h4>
+                        <button class="btn-hover btn btn--loc">Subscribe</button>
+                    </div>
+                </div> <!-- /Subscribe  -->
+            </div> <!-- /container -->
+
+            <!-- Contact -->
+
+            <div class="contact">
+                <div class="container">
+                    <div class="contact__inner">
+                        <h1 class="contact__title">Contact Us</h1>
+                        <div class="input__top">
+                            <div class="input__left">
+                                <label class="contact__label">First Name<input class="input input--cont" type="text" placeholder="First Name"></label>
+                                <label class="contact__label">Email<input class="input input--cont" type="text" placeholder="Email"></label>
+                            </div>
+                            <div class="input__right">
+                                <label class="contact__label">Last Name</label><input class="input input--cont" type="text" placeholder="Last Name"></label>
+                                <label class="contact__label">Phone<input class="input input--cont" type="text" placeholder="Phone"></label>
+                            </div>
+                        </div>
+                        <label class="contact__label contact__label--bittom" for="label">Massage<input class="input input--massage" type="text" placeholder="Your message"></label>
+                        <div class="button__contact">
+                            <button class="btn-hover btn btn--contact">Send</button>
+                            </div>
+                    </div>
+                    <img class="contact__img" src="../Задачи/images/img_contact.svg" alt="">
+                </div><!-- /container -->
+            </div>  <!-- Contact -->
+
+            <div class="reviews">
+                <div class="container">
+                    <div class="reviews__filter">
+                        <div class="reviews__text"><br>Reviews (256)</div>
+                        <div class="rewiews__right-filter">
+                        <select class="select select--reviews" name="select" id="">
+                            <option class="intro__select-text intro__select-text--reviewstext " value="sort">sort</option>
+                        </select>
+                        <button class="btn-hover btn btn--reviewsbtn ">Post A Review</button>
+                        </div>
+                    </div> <!-- reviews__filter -->
+
+
+                    <div class="reviews__reviews">
+                        <div class="reviews__left">
+                            <img src="../Задачи/images/avatar_1.png" class="reviews__img"></img>
+                            <div class="rewiews__name">
+                                <div class="reviews__text">Anna Marksson Visited Las Vegas</div>
+                                <div class="reviews__star-img">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star2.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="revirws__right">
+                            <div class="revirws__title">We had a lovely time
+                                <div class="revirws__date"><time datetime="15.03.2022">15.03.2022</time></div>
+                                <div class="reviews__text">“I don`t know where to start. It was simply amazing! From the time we got there to the staff at our hotel, to our Uber driver, to the meals at our restaurant, i can`t wait until we visit Las Vegas again!”</div>
+                            </div>
+                        </div>
+                    </div> <!-- /reviews__reviews -->
+
+                    <div class="reviews__reviews">
+                        <div class="reviews__left">
+                            <img src="../Задачи/images/avatar_2.png" class="reviews__img"></img>
+                            <div class="rewiews__name">
+                                <div class="reviews__text">Edward Signim Visited Rome</div>
+                                <div class="reviews__star-img">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star2.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="revirws__right">
+                            <div class="revirws__title">Magical Rome!
+                                <div class="revirws__date" datetime="15/03/2022">21.02.2022</div>
+                                <div class="reviews__text">“Everybody knows how much history this city has, but we were not prepared by just how much it is! At every single corner you can find a piece of history that is there for thousands of years. If you didn`t visit, what you are waiting for?”</div>
+                            </div>
+                        </div>
+                    </div> <!-- /reviews__reviews -->
+
+                    <div class="reviews__reviews">
+                        <div class="reviews__left">
+                            <img src="../Задачи/images/avatar_3.png" class="reviews__img"></img>
+                            <div class="rewiews__name">
+                                <div class="reviews__text">Jenna Miles Visited Belgrade</div>
+                                <div class="reviews__star-img">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star2.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="revirws__right">
+                            <div class="revirws__title">Where Sava meets Danube
+                                <div class="revirws__date" datetime="15/03/2022">15.03.2022</div>
+                                <div class="reviews__text">“This city is nothing what i expected. Such a lively place, full of color, wonderful people and fantastic food. Service is lovely and my tour guide showed me much more than it was planned, simply because he is amazing at his job! I can`t wait to go back!”</div>
+                            </div>
+                        </div>
+                    </div> <!-- /reviews__reviews -->
+
+                    <div class="reviews__reviews">
+
+                        <div class="reviews__left">
+                            <img src="../Задачи/images/avatar_4.png" class="reviews__img"></img>
+                            <div class="rewiews__name">
+                                <div class="reviews__text">Jonathan Bright Visited Tahiti</div>
+                                <div class="reviews__star-img">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                <img class="active__star-img" src="../Задачи/images/star2.svg" alt="">
+                                </div>
+                            </div>
+                        </div><!-- reviews__left -->
+
+
+                        <div class="revirws__right">
+                            <div class="revirws__title">White sand, blue skies
+                                <div class="revirws__date" datetime="15/03/2022">15.03.2022</div>
+                                <div class="reviews__text">“When we got there it was raining, but after it stopped, it was lovely! Temperature is pleasant and i loved their free wifi zones. If you have, bring your camera because you are going to need it, a lot.”</div>
+                            </div>
+                        </div><!-- revirws__right -->
+
+                    </div> <!-- /reviews__reviews -->
+
+                    <div class="rewievs__footer">
+                        <button class="btn-hover btn btn--reviewsfoot">Load More</button>
+                    </div>
+
+                </div> <!-- /container -->
+            </div> <!-- /Reviews -->
+
+            <div class="top-bar">
+                <div class="container">
+                    <div class="top-bar__text">Where do you want to travel today?</div>
+                    <div class="top-bar-inner">
+
+
+                        <div class="top-bar__btn">
+                            <div class="top-bar__block">
+                                <div class="block__text">USA</div>
+                                <a class="block__x" href="">
+                                    <img src="../Задачи/images/delete_icn.svg" alt=""></a>
+                            </div>
+                            <div class="top-bar__block">
+                                <div class="block__text">New York</div>
+                                <a class="block__x" href="">
+                                    <img src="../Задачи/images/delete_icn.svg" alt=""></a>
+                            </div>
+                            <div class="top-bar__block">
+                                <div class="block__text">City Life</div>
+                                <a class="block__x" href="">
+                                    <img src="../Задачи/images/delete_icn.svg" alt=""></a>
+                            </div>
+                            <div class="top-bar__block">
+                                <div class="block__text">Cheap</div>
+                                <a class="block__x" href="">
+                                    <img src="../Задачи/images/delete_icn.svg" alt=""></a>
+                            </div>
+                        </div> <!-- top-bar__btn -->
+
+
+                        <div class="top-bar__filter">
+                            <a class="top-bar__nav" href="">List View</a>
+                            <a class="top-bar__nav" href="">Map View</a>
+                            <select class="select select--topbar" name="select" id="">
+                                <option class="intro__select-text" value="sort">Sort By</option>
+                            </select>
+                        </div><!-- top-bar__filter  -->
+
+
+                    </div><!-- /top-bar-inner -->
+                </div><!-- /container -->
+            </div> <!-- /top-bar -->
+
+            <div class="tour">
+                <div class="container">
+
+
+                        <div class="tour_location">
+                                <div class="location__inner">
+
+                                    <div class="location__top">
+                                        <div class="location__left-top">
+                                            <div class="location__name">New York Skyline Tour
+                                            <div class="location__subname">The best of New York</div>
+                                        </div>
+                                    </div>
+                                        <div class="location__rating-top">
+                                            <div class="location__star-img">
+                                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                                <img class="active__star-img" src="../Задачи/images/star2.svg" alt="">
+                                            </div>
+                                            <div class="location__reviews">146 Reviews</div>
+                                        </div>
+                                    </div> <!-- location__top -->
+
+                                    <div class="location__center">
+                                    <img src="../Задачи/images/location_bg1.svg" class="location__img">
+                                        <div class="location__prise">$15</div>
+                                    </div>
+
+                                    <div class="location__text">Take a look at New York from above, the best way to see this city. You will find all the classic buildings, sights and more plus there is a lunch after the tour.</div>
+
+                                    <div class="location__footer">
+
+                                        <div class="location__left">
+                                        <img class="subomg__img" src="../Задачи/images/man.svg" alt="">
+                                        <div class="subimg__text">126 spaces left</div>
+                                        </div>
+
+                                        <div class="location__right">
+                                            <button class="btn-hover btn btn--location-footer">Book Now</button>
+                                        </div>
+                                    </div>
+                                </div> <!-- location__inner -->
+
+                                <div class="location__inner">
+
+                                    <div class="location__top">
+                                        <div class="location__left-top">
+                                            <div class="location__name">New York City
+                                            <div class="location__subname"> Walking tour</div>
+                                        </div>
+                                    </div>
+                                        <div class="location__rating-top">
+                                            <div class="location__star-img">
+                                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                                <img class="active__star-img" src="../Задачи/images/star2.svg" alt="">
+                                            </div>
+                                            <div class="location__reviews">292 Reviews</div>
+                                        </div>
+                                    </div> <!-- location__top -->
+
+                                    <div class="location__center">
+                                    <img src="../Задачи/images/locacion_bg2.svg" class="location__img">
+                                        <div class="location__prise">$19</div>
+                                    </div>
+
+                                    <div class="location__text">Take a look at New York from the street level, walk like a New Yorker. You will see all the classic things, sights and more plus there is a lunch after the tour.</div>
+
+                                    <div class="location__footer">
+
+                                        <div class="location__left">
+                                        <img class="subomg__img" src="../Задачи/images/man.svg" alt="">
+                                        <div class="subimg__text">243 spaces left</div>
+                                        </div>
+
+                                        <div class="location__right">
+                                            <button class="btn-hover btn btn--location-footer">Book Now</button>
+                                        </div>
+                                    </div>
+                                </div> <!-- location__inner -->
+
+                                <div class="location__inner">
+
+                                    <div class="location__top">
+                                        <div class="location__left-top">
+                                            <div class="location__name">New York City
+                                            <div class="location__subname">The Food Tour</div>
+                                        </div>
+                                    </div>
+                                        <div class="location__rating-top">
+                                            <div class="location__star-img">
+                                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                                <img class="active__star-img" src="../Задачи/images/star1.svg" alt="">
+                                                <img class="active__star-img" src="../Задачи/images/star2.svg" alt="">
+                                            </div>
+                                            <div class="location__reviews">381 Reviews</div>
+                                        </div>
+                                    </div> <!-- location__top -->
+
+                                    <div class="location__center">
+                                    <img src="../Задачи/images/location_bg3.svg" class="location__img">
+                                        <div class="location__prise">$25</div>
+                                    </div>
+
+                                    <div class="location__text">Learn where are all the best places to eat in this city,how to find your way around thousands of great andtasty restaurants and lear New York trough it`s food.</div>
+
+                                    <div class="location__footer">
+
+                                        <div class="location__left">
+                                        <img class="subomg__img" src="../Задачи/images/man.svg" alt="">
+                                        <div class="subimg__text">110 spaces left</div>
+                                        </div>
+
+                                        <div class="location__right">
+                                            <button class="btn-hover btn btn--location-footer">Book Now</button>
+                                        </div>
+                                    </div>
+                                </div> <!-- location__inner -->
+
+                        </div><!-- /tour_location -->
+
+
+                </div> <!-- /container -->
+            </div><!-- /tour -->
+            <nav class="sidebar">
+            <input type="checkbox" id="nav-toggle" hidden>
+            </nav>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+            <script src="app.js"></script>
+
+</body>
+</html>
+
